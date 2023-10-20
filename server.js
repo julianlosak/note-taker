@@ -4,13 +4,10 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware for JSON parsing
 app.use(express.json());
 
-// Serve static assets
 app.use(express.static('public'));
 
-// API Routes
 app.get('/api/notes', (req, res) => {
   const notes = JSON.parse(fs.readFileSync(path.join(__dirname, 'db/db.json'), 'utf-8'));
   res.json(notes);
@@ -33,7 +30,6 @@ app.delete('/api/notes/:id', (req, res) => {
   res.json({ message: 'Note deleted' });
 });
 
-// HTML Routes
 app.get('/notes', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/notes.html'));
 });
