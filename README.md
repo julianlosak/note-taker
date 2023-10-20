@@ -14,7 +14,7 @@ note taker is a application where users may create a note by naming it a title a
 Users can preview the application by following the geroku link or github link.
 - - - -
 ## **Website Preview**
-[note-taker](https://note-taker-55-74534a15b3d0.herokuapp.com/) (https://github.com/julianlosak/note-taker)
+[note-taker](https://note-taker-55-74534a15b3d0.herokuapp.com/)
 
 ![Preview of website](./media/mainpage.png)
 
